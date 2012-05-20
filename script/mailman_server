@@ -5,6 +5,9 @@ require "mailman"
 
 
 Mailman::Application.run do
+  subject(/Update (\d+)/) do |ticket_id|
+    Ticket.update(ticket_id, body: message.body.decoded)
+  end
   default do
     Ticket.create! subject: message.subject, body: message.body.decoded, from: message.from.first
   end
