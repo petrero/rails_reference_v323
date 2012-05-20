@@ -1,0 +1,1 @@
+http://github.com/norman/friendly_id
