@@ -1,0 +1,11 @@
+https://github.com/titanous/mailman
+
+
+if i have a large app or a small server i may run in memory problem so i don't want to load the rails application:
+
+Rails loading can be disabled by setting
+  Mailman.config.rails = "" 
+  
+Or i may using mails gem directly:
+  https://github.com
+/mikel/mail
