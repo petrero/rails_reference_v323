@@ -6,6 +6,6 @@ require "mailman"
 
 Mailman::Application.run do
   default do
-    puts "Received: #{message.subject}"
+    Ticket.create! subject: message.subject, body: message.body.decoded, from: message.from.first
   end
 end
