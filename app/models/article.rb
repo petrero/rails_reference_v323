@@ -1,4 +1,5 @@
 class Article < ActiveRecord::Base
   belongs_to :author
-  attr_accessible :content, :name, :published_at
+  has_many :comments
+  attr_accessible :content, :name, :published_at, :author
 end
