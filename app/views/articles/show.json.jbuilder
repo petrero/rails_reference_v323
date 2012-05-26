@@ -7,5 +7,5 @@ json.author do |json|
 end
 
 json.comments @article.comments do |json, comment|
-  json.(comment, :id, :name, :content)
+  json.partial! comment
 end
