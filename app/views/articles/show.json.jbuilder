@@ -6,4 +6,6 @@ json.author do |json|
   json.url author_url(@article.author)
 end
 
-json.comments @article.comments, :id, :name, :content
+json.comments @article.comments do |json, comment|
+  json.(comment, :id, :name, :content)
+end
