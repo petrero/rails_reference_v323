@@ -5,3 +5,5 @@ json.author do |json|
   json.(@article.author, :id, :name)
   json.url author_url(@article.author)
 end
+
+json.comments @article.comments, :id, :name, :content
