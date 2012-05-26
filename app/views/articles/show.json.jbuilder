@@ -1,3 +1,1 @@
-json.id @article.id
-json.name @article.name
-
+json.extract! @article, :id, :name, :published_at
