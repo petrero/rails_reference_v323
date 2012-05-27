@@ -16,6 +16,7 @@ class ArticlesController < ApplicationController
   def update
     @article = Article.find(params[:id])
     if @article.update_attributes(params[:article])
+      expire_fragment("recent_articles")
       redirect_to @article, notice: "Article has been updated."
     else
       render "edit"
