@@ -1,11 +1,13 @@
-<div id="recent_articles">
-  <h3>Recent Articles</h3>
-  <ul>
-  <% @recent_articles.each do |article| %>
-    <li><%= link_to article.name, article %></li>
-  <% end %>
-  </ul>
-</div>
+<% cache do %>
+  <div id="recent_articles">
+    <h3>Recent Articles</h3>
+    <ul>
+    <% @recent_articles.each do |article| %>
+      <li><%= link_to article.name, article %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
 
 <div id="article">
   <h1><%= @article.name %></h1>
