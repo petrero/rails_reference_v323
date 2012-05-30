@@ -16,3 +16,7 @@
     a { text-decoration: none; }
   }
 }
+
+.new_project {
+  @include button(simple, #3F8344)
+}
