@@ -1,6 +1,6 @@
 <%= simple_form_for(@product) do |f| %>
   <%= f.input :name %>
-  <%= f.input :price %>
+  <%= f.input :price, hint: "Price should be in US" %>
   <%= f.input :released_on, label: "Released Date" %>
   <%= f.input :rating %>
   <%= f.association :publisher %>
