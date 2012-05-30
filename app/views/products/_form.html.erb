@@ -4,6 +4,6 @@
   <%= f.input :released_on %>
   <%= f.input :rating %>
   <%= f.association :publisher %>
-  <%= f.association :categories %>
+  <%= f.association :categories, as: :check_boxes %>
   <%= f.button :submit %>
 <% end %>
