@@ -2,7 +2,7 @@
   <%= f.input :name %>
   <%= f.input :price, hint: "Price should be in US" %>
   <%= f.input :released_on, label: "Released Date" %>
-  <%= f.input :rating %>
+  <%= f.input :rating, collection: 1..5, as: :radio_buttons %>
   <%= f.association :publisher %>
   <%= f.association :categories, as: :check_boxes %>
   <%= f.button :submit %>
