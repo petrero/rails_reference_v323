@@ -1,7 +1,7 @@
 <%= simple_form_for(@product) do |f| %>
   <%= f.input :name %>
   <%= f.input :price %>
-  <%= f.input :released_on %>
+  <%= f.input :released_on, label: "Released Date" %>
   <%= f.input :rating %>
   <%= f.association :publisher %>
   <%= f.association :categories, as: :check_boxes %>
