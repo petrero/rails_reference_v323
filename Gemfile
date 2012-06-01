@@ -22,7 +22,8 @@ end
 
 gem 'jquery-rails'
 gem 'bcrypt-ruby'
-gem 'split'
+gem 'split', require: 'split/dashboard'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
