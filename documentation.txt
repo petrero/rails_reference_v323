@@ -1,0 +1,12 @@
+//split
+https://github.com/andrew/split
+
+
+
+//alternatives
+google website optimizer
+https://optimizely.appspot.com
+http://www.bingocardcreator.com/abingo
+http://vanity.labnotes.org/rails.html
+
+
