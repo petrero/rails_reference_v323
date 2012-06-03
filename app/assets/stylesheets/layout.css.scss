@@ -45,6 +45,7 @@ ul.horizontal {
 }
 
 @import "icons/*.png";
+@include all-icons-sprites;
 
 #subscribe {
   position: absolute;
@@ -60,10 +61,7 @@ ul.horizontal {
     width: 34px;
     height: 34px;
   }
-  .itunes   { @include icons-sprite(itunes); }
-  .twitter  { @include icons-sprite(twitter); }
-  .facebook { @include icons-sprite(facebook); }
-  .rss      { @include icons-sprite(rss); }
+  
 }
 
 
